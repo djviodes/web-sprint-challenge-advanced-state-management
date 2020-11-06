@@ -24,10 +24,24 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. What problem does the context API help solve?
+
+    Sharing state down a component tree.
+
 2. In your own words, describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
+
+    Actions and reducers work together to update the state based on an event or action that just took place.
+
 3. What is the difference between Application state and Component state? When would be a good time to use one over the other?
+
+    Application state is state that can be accessed globally or by the entire application while component state is only for the parent component and it's children. Application state is good if you have state that needs to be shared throughout different pieces of the application while component state is better if the state needs to be spread in one specific component tree.
+
 4. Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
+
+    Redux thunk is a middleware that allows you to return a function from your action creator instead of an object. The function receives the dispatch method which is used to dispatch synchronous actions in the body of the function once asynchronous operations have been completed.
+
 5. What is your favorite state management system you've learned and this sprint? Please explain why!
+
+    My favorite state management system is probably thunk. It made everything make much more sense.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -51,10 +65,10 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 Your finished project must include all of the following requirements:
 
-- [ ] Plan and implement how you are going to manage your state for your application
-- [ ] You _must_ use Redux as your state management system
-- [ ] Once you have planned out your state management system, fetch data from the smurf server and display the data it returns
-- [ ] Add a form to collect info for a new smurf, and make a POST request to the server to add a new smurf to your village
+- [X] Plan and implement how you are going to manage your state for your application
+- [X] You _must_ use Redux as your state management system
+- [X] Once you have planned out your state management system, fetch data from the smurf server and display the data it returns
+- [X] Add a form to collect info for a new smurf, and make a POST request to the server to add a new smurf to your village
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. You will be scored on your adherence to proper code style and good organization. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -62,8 +76,8 @@ In your solution, it is essential that you follow best practices and produce cle
 
 ##### GET '/smurfs'
 
-- [ ] Retrieve an array all the Smurfs in the Smurf DB by writing a `GET` to the endpoint `/smurfs`.
-- [ ] Double check that your response from the server is an array of smurfs.
+- [X] Retrieve an array all the Smurfs in the Smurf DB by writing a `GET` to the endpoint `/smurfs`.
+- [X] Double check that your response from the server is an array of smurfs.
 
 ```js
 [
@@ -78,7 +92,7 @@ In your solution, it is essential that you follow best practices and produce cle
 
 ##### POST '/smurfs'
 
-- [ ] Design the functionality to add a smurf to the Smurf DB you'll need all three fields. `name`, `age`, and `height`.
+- [X] Design the functionality to add a smurf to the Smurf DB you'll need all three fields. `name`, `age`, and `height`.
 
 Example of the shape of data to be sent to the `POST` endpoint:
 
@@ -90,7 +104,7 @@ Example of the shape of data to be sent to the `POST` endpoint:
 }
 ```
 
-- [ ] Double check to make sure that a smurf is created correctly once your functionality is built out.
+- [X] Double check to make sure that a smurf is created correctly once your functionality is built out.
 
 Initially Brainey will be in the array, but it takes more than one smurf to make the village. Be sure to add a few smurfs to populate our smurf village.
 
@@ -127,8 +141,8 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete after receiving your pull-request
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [X] Add your team lead as a reviewer on the pull-request
+- [X] Your team lead will count the project as complete after receiving your pull-request
 
 
